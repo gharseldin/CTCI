@@ -23,4 +23,14 @@ public class UniqueCharactersTest {
 	public void testStringWithRedundantCharacters() {
 		assertFalse(uniqueCheck.hasUniqueCharacters("abcdefga"));
 	}
+	
+	@Test
+	public void testStringWithUniqueCharactersInPlace() {
+		assertTrue(uniqueCheck.hasUniqueCharactersInPlace("abcdefg"));
+	}
+	
+	@Test
+	public void testStringWithRedundantCharactersInPlace() {
+		assertFalse(uniqueCheck.hasUniqueCharactersInPlace("abcdefga"));
+	}
 }
